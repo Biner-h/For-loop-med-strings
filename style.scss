@@ -1,9 +1,75 @@
+body {
+    user-select: none;
+    background-color: rgb(74, 2, 2);
+}
+
+.overskrift {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.3rem;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    color: rgb(255, 120, 120);
+    animation: fade-in 4s linear infinite;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.app {
+    width: 500px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(255, 120, 120);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+}
+
 .input {
     font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    box-shadow: 0 0 10px 5px rgb(74, 2, 2);
 }
 
 .knapp {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 35px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: black;
+    color: rgb(255, 120, 120);
+    &:hover {
+        box-shadow: 0 0 10px 5px rgb(74, 2, 2);
+        cursor: pointer;
+    }
 }
 
 .resultat {
+    position: absolute;
+    top: 70%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
 }

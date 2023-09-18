@@ -7,10 +7,11 @@ let counter = "";
 updateView();
 function updateView() {
     app.innerHTML = /*html*/ `
-        <input class="input" type="text" onchange="text = this.value" value = '${text}'>
-        <button class="knapp" onclick="telleVokaler(text)">Tell Vokaler</button>
-        <p>Resultat:</p>
-        <div class="resultat" id="resultat">${counter}</div>
+        <div class="app">
+            <input class="input" type="text" onchange="text = this.value" value = '${text}'>
+            <button class="knapp" onclick="telleVokaler(text)">Tell Vokaler</button>
+            <div class="resultat" id="resultat">Resultat: ${counter}</div>
+        </div>
     `;
 }
 
